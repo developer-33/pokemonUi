@@ -15,6 +15,9 @@ function App() {
 
   return (
     <>
+     <div className="App">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="Custom Logo" />
+    </div>
  {/* <div className="h-screen flex flex-col">
       <Header />
       <div className="flex flex-grow">
