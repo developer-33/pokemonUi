@@ -13,9 +13,11 @@ export default function PokemonNavbar() {
 
   useEffect(() => {
     async function fetchPokemon() {
-      const randomId = Math.floor(Math.random() * 151) + 1;
-      const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${randomId}`);
+      // const randomId = Math.floor(Math.random() * 151) + 1;
+      // const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${randomId}`);
+      const response = await fetch('https://pokeapi.co/api/v2/evolution-chain');
       const data = await response.json();
+      console.log(data);
       setPokemon({
         name: data.name,
         sprite: data.sprites.other['official-artwork'].front_default,

@@ -6,7 +6,9 @@ import './input.css'
 // import Feed from './profile/Feed'
 // import PostModal from './profile/PostModal'
 // import Post from './profile/Post'
-import PokemonNavbar from './pages/MessagePage'
+import NavPage from './pages/NavPage'
+
+ import ProfileLayout from './ProfileLayout.jsx'
 
 function App() {
  
@@ -21,7 +23,9 @@ function App() {
         <RightSidebar />
       </div>
     </div> */}
-<PokemonNavbar />
+<NavPage />
+
+<ProfileLayout />
 
     </>
   )
